@@ -1,38 +1,76 @@
+*{
+  margin:0;
+  padding:0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-full {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background: #eaeaea;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-full.header {
+  background: #eaeaea;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-full.first {
+  background: #f2e1e1;
+}
+
+.section-full.second {
+  background: #ddf2e9;
+}
+
+.section-full table{
+  width: 100%;
+  text-align: left;
+  margin-top:20px;
+}
+.section-full table thead {
+  background: rgb(83, 83, 215);
+  
+}
+.section-full table thead th {
+  padding:10px;
+  color: #eaeaea;
+}
+
+.section-full table tbody tr {
+  background: rgb(241, 241, 248);
+}
+
+.section-full table tbody tr td{
+  padding:10px;
+  color: #2a2a2a;
+}
+
+
+nav {
+  list-style:none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding-top:50px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+  padding:20px 30px;
+  color:#2a2a2a;
+  font-size:16px;
+  font-weight: bold;
+  display: inline-block;
+  background: rgb(168, 203, 228);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a.active {
+  background: rgb(66, 133, 180);
+  color:#fff;
 }
